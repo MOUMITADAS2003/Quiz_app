@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ topic }} Quiz</title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body onload="startTimer()">
+  <h1>{{ topic }} Quiz</h1>
+  <form method="post">
+    <label>Your Name: <input type="text" name="name" required></label><br><br>
+    
+    {% for q in questions %}
+      <fieldset>
+        <legend><strong>Q{{ loop.index }}: {{ q.question }}</strong></legend>
+        {% for option in q.options %}
+          <label>
+            <input type="radio" name="q{{ loop.index0 }}" value="{{ option }}" required>
+            {{ option }}
+          </label><br>
+        {% endfor %}
+      </fieldset><br>
+    {% endfor %}
+
+    <p>Time left: <span id="time">60</span>s</p>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

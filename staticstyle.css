@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: 2px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #444;
+}
+
+label {
+  display: block;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#timer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 15px 0;
+  color: #e91e63;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  background-color: #fff;
+}
+
+a {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  background: #2196F3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+a:hover {
+  background: #0b7dda;
+}

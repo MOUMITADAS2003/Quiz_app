@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaderboard</title>
+</head>
+<body>
+  <h1>Leaderboard</h1>
+  <table border="1">
+    <tr><th>Rank</th><th>Name</th><th>Topic</th><th>Score</th></tr>
+    {% for row in leaderboard %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ row[0] }}</td>
+      <td>{{ row[1] }}</td>
+      <td>{{ row[2] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/">Go Home</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+</head>
+<body>
+  <h1>Select a Quiz Topic</h1>
+  <ul>
+    {% for quiz in quizzes %}
+      <li><a href="/quiz/{{ quiz }}">{{ quiz }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
